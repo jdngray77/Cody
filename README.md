@@ -1,49 +1,45 @@
 # Cody
 
-
-//Informational notes.
-
 Cody is a rotational encryption (rot) tool which works by altering charcters based on an offset or 'rot(ation)'.
 
-This method of encryption is functional for leisurely use but is not secure by today's standards, and should not be treated as such.
+This is a common and easily researchable encryption method, so I won't explain it here. Just know that
+> This method of encryption is functional for leisurely use but is not secure by today's standards, and should not be treated as such.
 
-This application require a Java Runtime Environment to operate.
+# Usage 
 
-No other documentation exists on how this software operates, but it is simple and the source is availible. Explore and experiment!
+## Simple
 
+Encrypt and decrpyt with a known key.
 
-//Installation.
-Cody can be ran from this disk, however outputs cannot be saved this way. It is recommended that a copy of 'Cody.jar' and 'Words.txt' are copied to a location on your local storage for use.
+https://user-images.githubusercontent.com/50697488/170289266-7fae51a6-3ee7-4c93-880e-38e059c3be6a.mov
 
-Java Runtime must be installed directly from Oracle for this software to operate.
+## Bruteforce By Word
 
+Decrypt an unknown string by decrypting with every key looking for a single legible word.
 
-//The included product and EULA
+https://user-images.githubusercontent.com/50697488/170289270-7eb931a4-fe4d-4483-abcd-17167d4d6257.mov
 
-The files on this disk:
-	Cody.jar
-		The built Java package of the ROT tool named CODY. Treat this file as any other executable (Requires Java Runtime to operate!)
+## Bruteforce By Sentence
 
-	Words.txt
-		A list of words from the english language which is used by Cody to guess at encryption keys for cracking encryption. Only the Word API class interacts with this file.
+Decrypt an unknown string by decrypting with every key and looking for a many legible words
 
-	Source Beta 5
-		The beta version five of the source code for Cody which can be used as per the following conditions ONLY.
-
-			EULA
-			- Source may be modified for personal use ONLY.
-			- Source may not be distributed; modified or not. (For security of the next end user, in that the code and product they recieve is safe and unmodified.)
-			- Source may be examined for an understanding of how Cody operates.
-			- Source may not be used in any way that is outside of it's intended use or in any way causes harm, obstruction, or other neusience to any other persons.
-
-			By operating this software you agree to these terms.
+https://user-images.githubusercontent.com/50697488/170289212-f45ac41c-2c58-4186-926d-5a5cc0bbf9bf.mov
 
 
-//Credit
+## Bruteforce By Partially known output
+
+Decrypt an unknown string by decrypting with every key looking for a known fragment of the output.
+
+https://user-images.githubusercontent.com/50697488/170289255-ce959898-fbf6-462c-9ab5-d365113c7b7a.mov
+
+
+
+
+# Credit
 
 Concept, process design, product testing: Thomas Bird 
 Word_API, Coding aid, product testing: Jamie Watts
 
 Modifications of Word_API, Coding, GUI, functionality, project organisation, testing, publication: Jordan Gray.
 
-Protected under the Copyright Protection Act. Do Not Distribute.
+
